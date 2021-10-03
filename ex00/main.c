@@ -6,7 +6,7 @@
 /*   By: acretu <acretu@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/02 06:44:55 by acretu            #+#    #+#             */
-/*   Updated: 2021/10/03 16:57:25 by acretu           ###   ########.fr       */
+/*   Updated: 2021/10/03 17:36:11 by acretu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,6 @@ void	rush(int x, int y);
 
 int	main(void)
 {
-	rush(4, 4);
+	rush(5, 1);
 	return (0);
 }

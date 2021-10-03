@@ -6,11 +6,11 @@
 /*   By: acretu <acretu@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/02 09:43:17 by acretu            #+#    #+#             */
-/*   Updated: 2021/10/03 11:36:14 by acretu           ###   ########.fr       */
+/*   Updated: 2021/10/03 17:36:35 by acretu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<unistd.h>
+#include <unistd.h>
 
 void	ft_putchar(char c);
 void	ft_core(int x);
@@ -25,12 +25,7 @@ void	rush(int x, int y)
 	i = 1;
 	while (i <= y)
 	{
-		if (i == 1)
-		{
-			ft_margins(x);
-			ft_putchar('\n');
-		}
-		else if (i == y)
+		if (i == 1 || i == y)
 		{
 			ft_margins(x);
 			ft_putchar('\n');
@@ -47,26 +42,16 @@ void	rush(int x, int y)
 void	ft_margins(int x)
 {
 	int		i;
-	char	c;
 
 	i = 1;
 	while (i <= x)
 	{
 		if (i == 1)
-		{
-			c = 'A';
-			ft_putchar(c);
-		}
+			ft_putchar('A');
 		else if (i == x)
-		{
-			c = 'C';
-			ft_putchar(c);
-		}
+			ft_putchar('C');
 		else
-		{
-			c = 'B';
-			ft_putchar(c);
-		}
+			ft_putchar('B');
 		i++;
 	}
 }
@@ -74,21 +59,14 @@ void	ft_margins(int x)
 void	ft_core(int x)
 {
 	int		i;
-	char	c;
 
 	i = 1;
 	while (i <= x)
 	{
 		if (i == 1 || i == x)
-		{
-			c = 66;
-			ft_putchar(c);
-		}
+			ft_putchar('B');
 		else
-		{
-			c = ' ';
-			ft_putchar(c);
-		}
+			ft_putchar(' ');
 		i++;
 	}
 }

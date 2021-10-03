@@ -6,11 +6,11 @@
 /*   By: acretu <acretu@student.42wolfsburg.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/02 09:43:17 by acretu            #+#    #+#             */
-/*   Updated: 2021/10/03 12:10:02 by acretu           ###   ########.fr       */
+/*   Updated: 2021/10/03 17:36:39 by acretu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<unistd.h>
+#include <unistd.h>
 
 void	ft_putchar(char c);
 void	ft_first(int x);
